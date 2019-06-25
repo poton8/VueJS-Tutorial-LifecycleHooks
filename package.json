@@ -1,0 +1,19 @@
+{
+  "name": "vuejs-tutorial-lifecyclehooks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HelloVue.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poton8/VueJS-Tutorial-LifecycleHooks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poton8/VueJS-Tutorial-LifecycleHooks/issues"
+  },
+  "homepage": "https://github.com/poton8/VueJS-Tutorial-LifecycleHooks#readme"
+}

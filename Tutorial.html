@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vue.js Tutorial</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        
+        
+    </head>
+    <body>
+        <Header>
+            <h1>Vue.js Tutorial</h1>
+        </Header>
+        <Main>
+            <div id="app">
+                {{ message }}
+            </div>  
+            
+            <div id="app2">
+                <span v-bind:title="message">
+                    Hover over this message
+                </span>
+            </div>
+
+            <div id ="app3">
+                <span v-if="seen">You can see me</span>
+            </div>
+
+            <div id = "app4">
+                <ol>
+                    <li v-for="item in items">{{item.text}}</li>
+                </ol>
+                
+            </div>
+            <script src="HelloVue.js"></script>
+        </Main>
+    </body>
+</html>
