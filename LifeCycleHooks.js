@@ -27,6 +27,7 @@ var create = new Vue({
     },
     updated: function() {
         console.log("The name has been changed to " + this.name)
+        this.$destroy();
     },
 
     beforeDestroy: function() {
