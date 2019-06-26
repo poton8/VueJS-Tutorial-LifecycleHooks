@@ -5,15 +5,15 @@ var create = new Vue({
     },
     
     beforeCreate(){
-        console.log("Nothing has been created")
+      console.log("Nothing has been created")
     },
     created(){
-        console.log("The data has been created but is still " + this.$el)
+      console.log("The data has been created but is still " + this.$el)
     },
 
     beforeMount: function () {
-        console.log(this.$el + " is not mounted yet")
-      },
+      console.log(this.$el + " is not mounted yet")
+    },
 
     mounted: function() {
       console.log("The data has been mounted and is " + this.$el.textContent) 
@@ -23,18 +23,19 @@ var create = new Vue({
     },
 
     beforeUpdate: function() {
-        console.log("The name is being changed to " + this.name) 
+      console.log("The name is being changed to " + this.name) 
     },
     updated: function() {
-        console.log("The name has been changed to " + this.name)
-        this.$destroy();
+      console.log("The name has been changed to " + this.name)
+      this.$destroy();
     },
 
     beforeDestroy: function() {
-        console.log("Name is being destroyed")
+      delete this.$el
+      console.log(this.$el + " is being destroyed")
     },
 
     destroyed: function() {
-        console.log("Name has been destroyed")
-      }
-})
+      console.log(this.$el + " has been destroyed")
+    }
+});
